@@ -10,7 +10,6 @@ import java.util.concurrent.Executors;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.jeecms.common.upload.FileUtil;
 import org.apache.commons.lang.StringUtils;
 import org.json.JSONArray;
 import org.slf4j.Logger;
@@ -461,7 +460,7 @@ public class ContentApiAct {
 						 rewardArr,user,false);
 				}else{
 					try {
-						FileUtil.uploadImgLW(null,"jiaju","1");
+						//FileUtil.uploadImgLW(null,"jiaju","1");
 					} catch (Exception e) {
 						e.printStackTrace();
 					}

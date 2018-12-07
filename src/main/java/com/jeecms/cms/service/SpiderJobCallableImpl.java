@@ -6,7 +6,6 @@ import com.jeecms.cms.entity.main.Content;
 import com.jeecms.cms.entity.main.ContentExt;
 import com.jeecms.cms.manager.main.ContentMng;
 import com.jeecms.common.upload.FileUpload;
-import com.jeecms.common.upload.FileUtil;
 import com.jeecms.core.entity.CmsSite;
 import com.jeecms.core.entity.CmsUser;
 import com.jeecms.core.entity.CmsUserSite;
@@ -80,7 +79,7 @@ public class SpiderJobCallableImpl implements SpiderJobCallable {
 //        String[] titles = title.split("//");
         for(int i=0;i<pictures.size();i++){
             try {
-                FileUtil.uploadImgLW(pictures.get(i).toString(),title,String.valueOf(i));
+                //FileUtil.uploadImgLW(pictures.get(i).toString(),title,String.valueOf(i));
                 contentMng.savePY(bean,ext,null,null,null,null,null,null,null,null,pics,null,76,2,false,null,null,null,false,0.0,10.0,null,user,true);
             } catch (Exception e) {
                 e.printStackTrace();
